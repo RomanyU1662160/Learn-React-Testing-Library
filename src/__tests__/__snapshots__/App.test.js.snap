@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div>
+      <form
+        class="mt-4 col-md-6 offset-md-3"
+      >
+        <div
+          class="form-group"
+        >
+          <input
+            class="form-control"
+            placeholder="Add to do"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <button
+            class="btn-dark"
+          >
+            Add to do
+          </button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <h3>
+         to do list List
+      </h3>
+      <div
+        class="row border-bottom p-4"
+      >
+        <div
+          class="col-md-4"
+        >
+           Name : Learn React.js 
+        </div>
+        <div
+          class="col-md-4"
+        >
+          Status:  not Yet 
+        </div>
+        <div
+          class="col-md-2"
+        >
+          <button
+            class="btn btn-danger"
+          >
+             Delete 
+          </button>
+        </div>
+      </div>
+      <div
+        class="row border-bottom p-4"
+      >
+        <div
+          class="col-md-4"
+        >
+           Name : Learn vue.js 
+        </div>
+        <div
+          class="col-md-4"
+        >
+          Status:  not Yet 
+        </div>
+        <div
+          class="col-md-2"
+        >
+          <button
+            class="btn btn-danger"
+          >
+             Delete 
+          </button>
+        </div>
+      </div>
+      <div
+        class="row border-bottom p-4"
+      >
+        <div
+          class="col-md-4"
+        >
+           Name : Learn Angular.js 
+        </div>
+        <div
+          class="col-md-4"
+        >
+          Status:  not Yet 
+        </div>
+        <div
+          class="col-md-2"
+        >
+          <button
+            class="btn btn-danger"
+          >
+             Delete 
+          </button>
+        </div>
+      </div>
+      <div
+        class="row border-bottom p-4"
+      >
+        <div
+          class="col-md-4"
+        >
+           Name : Learn Laravel 
+        </div>
+        <div
+          class="col-md-4"
+        >
+          Status:  not Yet 
+        </div>
+        <div
+          class="col-md-2"
+        >
+          <button
+            class="btn btn-danger"
+          >
+             Delete 
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

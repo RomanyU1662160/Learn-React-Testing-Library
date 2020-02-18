@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ToDoForm from "./components/ToDoForm";
+import ToDoList from "./components/ToDoList";
+import uuid from "uuid";
 
 function App() {
+  const init = [
+    { id: 1, name: "Learn React.js", state: false },
+    { id: 2, name: "Learn vue.js", state: false },
+    { id: 3, name: "Learn Angular.js", state: false },
+    { id: 4, name: "Learn Laravel", state: false }
+  ];
+
+  const [toDos, setToDos] = useState(init);
+
+  const addToDo = val => {
+    const newTodo = {
+      id: uuid(),
+      name: val,
+      state: false
+    };
+    let newList = [...toDos, newTodo];
+    setToDos(newList);
+  };
+
+  const DeleteTodo = id => {
+    console.log("Delete clicked");
+    const filteredToDos = toDos.filter(item => {
+      return item.id !== id;
+    });
+
+    return setToDos(filteredToDos);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToDoForm addToDo={addToDo}> </ToDoForm>
+      <ToDoList list={toDos} deleteTodo={DeleteTodo}></ToDoList>
     </div>
   );
 }
