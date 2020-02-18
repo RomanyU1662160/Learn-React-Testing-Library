@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render the h3 title  1`] = `
+<DocumentFragment>
+  <div>
+    <h3
+      data-testid="listTitle"
+    >
+       The To Do List
+    </h3>
+    <div
+      class="row border-bottom p-4"
+    >
+      <div
+        class="col-md-4"
+      >
+         Name : Learn React.js 
+      </div>
+      <div
+        class="col-md-4"
+      >
+        Status:  not Yet 
+      </div>
+      <div
+        class="col-md-2"
+      >
+        <button
+          class="btn btn-danger"
+        >
+           Delete 
+        </button>
+      </div>
+    </div>
+    <div
+      class="row border-bottom p-4"
+    >
+      <div
+        class="col-md-4"
+      >
+         Name : Learn Vue.js 
+      </div>
+      <div
+        class="col-md-4"
+      >
+        Status:  not Yet 
+      </div>
+      <div
+        class="col-md-2"
+      >
+        <button
+          class="btn btn-danger"
+        >
+           Delete 
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

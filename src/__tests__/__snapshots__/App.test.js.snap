@@ -31,8 +31,10 @@ exports[`matches snapshot 1`] = `
       </form>
     </div>
     <div>
-      <h3>
-         to do list List
+      <h3
+        data-testid="listTitle"
+      >
+         The To Do List
       </h3>
       <div
         class="row border-bottom p-4"
