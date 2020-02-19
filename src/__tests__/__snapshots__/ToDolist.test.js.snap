@@ -7,7 +7,7 @@ exports[`render the h3 title  1`] = `
       class="text-info text-center"
       data-testid="listTitle"
     >
-       The To Do List
+      The To Do List
     </h3>
     <div
       class="row border-bottom p-4"
