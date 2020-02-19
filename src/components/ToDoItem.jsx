@@ -3,12 +3,14 @@ import React, { useState } from "react";
 const ToDoItem = props => {
   const { name, state, id } = props.item;
   const { deleteTodo } = props;
-  console.log(deleteTodo);
 
   return (
     <>
       <div className="row border-bottom p-4">
-        <div className="col-md-4"> Name : {name} </div>
+        <div className="col-md-4" data-testid="todo">
+          {" "}
+          Name : {name}{" "}
+        </div>
 
         <div className="col-md-4">
           Status: {!state ? " not Yet " : "completed"}

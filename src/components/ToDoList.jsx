@@ -10,7 +10,12 @@ const ToDoList = props => {
         The To Do List
       </h3>
       {list.map(item => (
-        <ToDoItem key={item.id} item={item} deleteTodo={deleteTodo}></ToDoItem>
+        <ToDoItem
+          key={item.id}
+          item={item}
+          deleteTodo={deleteTodo}
+          data-testid="toDoItem"
+        ></ToDoItem>
       ))}
     </div>
   );

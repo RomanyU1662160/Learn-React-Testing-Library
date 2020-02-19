@@ -19,6 +19,7 @@ export default function ToDoForm(props) {
       <form
         onSubmit={e => handleAddToDo(e)}
         className="mt-4 col-md-6 offset-md-3"
+        data-testid="searchInput"
       >
         <div className="form-group">
           <input
