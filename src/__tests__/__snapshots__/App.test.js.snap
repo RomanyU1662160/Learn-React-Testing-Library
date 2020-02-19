@@ -32,6 +32,7 @@ exports[`matches snapshot 1`] = `
     </div>
     <div>
       <h3
+        class="text-info text-center"
         data-testid="listTitle"
       >
          The To Do List

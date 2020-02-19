@@ -8,15 +8,17 @@ const init = [
   { id: 2, name: "Learn Vue.js", state: false }
 ];
 
-const DeleteTodo = id => {
-  console.log("Delete clicked");
-};
-
+afterEach(cleanup);
 it("render the h3 title ", () => {
   const { getByTestId, getByText, asFragment } = render(
     <ToDoList list={init}></ToDoList>
   );
   expect(asFragment()).toMatchSnapshot();
+
   const title = getByTestId("listTitle");
   expect(title).toHaveTextContent("The To Do List");
+
+  const byText = getByText("The To Do List");
+  expect(byText).toBeInTheDocument();
+  expect(byText).toHaveClass("text-center");
 });
