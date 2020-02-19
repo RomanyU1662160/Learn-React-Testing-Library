@@ -16,8 +16,7 @@ const ToDoItem = props => {
 
         <div className="col-md-2">
           <button className="btn btn-danger" onClick={() => deleteTodo(id)}>
-            {" "}
-            Delete{" "}
+            Delete
           </button>
         </div>
       </div>
