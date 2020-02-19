@@ -5,6 +5,11 @@ exports[`matches snapshot 1`] = `
   <div
     class="App"
   >
+    <h1
+      data-testid="list"
+    >
+       To do App 
+    </h1>
     <div>
       <form
         class="mt-4 col-md-6 offset-md-3"
@@ -35,7 +40,7 @@ exports[`matches snapshot 1`] = `
         class="text-info text-center"
         data-testid="listTitle"
       >
-         The To Do List
+        The To Do List
       </h3>
       <div
         class="row border-bottom p-4"

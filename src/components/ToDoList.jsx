@@ -4,11 +4,9 @@ import ToDoItem from "./ToDoItem";
 const ToDoList = props => {
   const { list, deleteTodo } = props;
 
-  console.log("list in todolist ", list);
   return (
     <div>
       <h3 data-testid="listTitle" className="text-info text-center">
-        {" "}
         The To Do List
       </h3>
       {list.map(item => (
